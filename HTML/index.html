@@ -1,54 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="icon" href="Logo.png">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="icon" href="Logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
   <!-- header Design -->
   <header>
     <nav class="navbar navbar-expand-lg bg-body-none">
       <div class="container">
         <a class="navbar-brand mx-auto" href="#">
-          <img
-            src="/Images/Logo.png"
-            alt="Logo"
-            width="100"
-            height="100"
-            class="d-inline-block align-text-top"
-          />
+          <img src="/Logo.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-top" />
         </a>
         <h2 class="mt-3">Vcare</h2>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active fw-medium" aria-current="page" href="#" >Home</a>
+              <a class="nav-link active fw-medium" aria-current="page" href="#">Home</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active  fw-medium" aria-current="page" href="#"
-                >Services</a
-              >
+              <a class="nav-link active  fw-medium" aria-current="page" href="#">Services</a>
             </li>
 
             <li class="nav-item">
@@ -67,76 +50,153 @@
             <div class="col-12 col-lg-6">
               <h1 class="ms-5 mt-4 lh-sm">Welcome to <br>Vcare</h1>
               <p class="p px-5 fw-medium">Find your doctor and make an <br>appoinment</p>
-              <button type="submit" class="btn btn-primary w-50 mt-3 ms-5 rounded-5 shadow ">
+              <button type="submit" class="bttn btn-primary w-50 mt-3 ms-5 rounded-5 shadow ">
+                <!--Change of class btn to bttn-->
                 Book an Appoinment
               </button>
             </div>
             <div class="col-12 col-lg-6">
               <div class="section-img d-flex justify-content-end mt-2">
-                <img src="/Images/phy ap.jpg" alt="Doctor" class="hero-img" width="100%">
+                <img src="/doctors.png" alt="Doctor" class="hero-img">
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
-      <div class="Our Service py-5">
-        <div class="container">
-          <h2 class="text-dark fw-bold text-center pb-5 lh-base">Our Services</h2>
-        </div>
-  
-        <div class="container py-5">
-          <div class="row">
-            <div class="col-12 col-lg-3">
-              <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
-                <img src="Appoinment doctor.jpg" class="card-img-top"
-                  alt="Smiley doctor">
-                <div class="card-body">
-                  <h4 class="card-title">Book an appoinment with doctor.</h4>
-                  <button type="button" class="btn btn-dark">Consult Now</button>
-                </div>
+
+
+  </header>
+
+  <main>
+    <!--Our Service-->
+    <div class="Our Service pt-5">
+      <div class="container">
+        <h2 class="text-dark fw-bold text-center pb-5 lh-base">Our Services</h2>
+      </div>
+
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-12 col-lg-3">
+            <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+              <img src="/Appoinment doctor.jpg" class="card-img-top" alt="Smiley doctor">
+              <div class="card-body">
+                <h4 class="card-title">Book an appoinment with doctor.</h4>
+                <button type="button" class="btn btn-dark">Consult Now</button>
               </div>
             </div>
-            <div class="col-12 col-lg-3">
-              <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
-                <img src="Delivery.jpg" class="card-img-top"
-                  alt="Smiley doctor">
-                <div class="card-body">
-                  <h4 class="card-title">Order Medicines Online.</h4>
-                  <button type="button" class="btn btn-dark">Order Now!</button>
-                </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+              <img src="/Delivery.jpg" class="card-img-top" alt="Smiley doctor">
+              <div class="card-body">
+                <h4 class="card-title">Order Medicines Online.</h4>
+                <button type="button" class="btn btn-dark">Order Now!</button>
               </div>
             </div>
-            <div class="col-12 col-lg-3">
-              <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
-                <img src="Appoinment doctor.jpg" class="card-img-top"
-                  alt="Smiley doctor">
-                <div class="card-body">
-                  <h4 class="card-title">Book a physical appoinment.</h4>
-                  <button type="button" class="btn btn-dark">Book Now!</button>
-                </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+              <img src="/physicalAppoinment.jpg" class="card-img-top" alt="Smiley doctor">
+              <div class="card-body">
+                <h4 class="card-title">Book a physical appoinment.</h4>
+                <button type="button" class="btn btn-dark">Book Now!</button>
               </div>
             </div>
-            <div class="col-12 col-lg-3">
-              <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
-                <img src="Appoinment doctor.jpg" class="card-img-top"
-                  alt="Smiley doctor">
-                <div class="card-body">
-                  <h4 class="card-title">Trace your medical history</h4>
-                  <button type="button" class="btn btn-dark w-25">View</button>
-                </div>
+          </div>
+          <div class="col-12 col-lg-3">
+            <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+              <img src="/track.jpg" class="card-img-top" alt="Smiley doctor">
+              <div class="card-body">
+                <h4 class="card-title">Trace your medical history</h4>
+                <button type="button" class="btn btn-dark w-25">View</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
-  </header>
+    </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-  crossorigin="anonymous">
-</script>
+    <!--BMI Section-->
+    <div class="container my-5 ">
+      <div class="row g-5 d-flex align-items-center">
+        <div class="col-12 col-lg-5 py-5">
+          <img src="/BMI.png" alt="BMI Indicator" class="img-fluid ms-auto d-block">
+    
+        </div>
+        <div class="col-12 col-lg-7">
+          <h4 class="fw-bold fs-4 mb-3">Calculate Your BMI for a Healthier<br> You</h4>
+          <p class="fs-6">Track your progress towards a healthier lifestyle.<br><br>
+            BMI a screening tool used to estimate body fat based on your height and weight.<br><br>
+            BMI can be a quick and easy way to get a general idea of your weight-to-height ratio. It can also be used to
+            track changes over time and identify potential health risks.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <button type="button" class="btn btn-dark me-2 mt-5">Calculate BMI</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="social-connect bg-primary text-white text-center rounded-top-3">
+      <div class="container">
+        <div class="row">
+          
+            <div class="d-flex justify-content-between">
+              <p class="fs-6 py-2 mt-2">Get connected with us on Social networks:</p>
+              <div class="d-flex justify-content-end align-items-center">
+                
+                <img src="facebook.png" alt="Facebook Icon" width="32" height="32" class="me-2 rounded-circle">
+                <img src="twitter.png" alt="Twitter Icon" width="32" height="32" class="me-2 rounded-circle">
+                <img src="Linkedin.png" alt="Linkedin Icon" width="32" height="32" class="me-2 rounded-circle">
+                <img src="instagram.png" alt="Instagram Icon" width="32" height="32" class="me-2 rounded-circle">
+                <img src="Google.png" alt="Google Icon" width="32" height="32" class="me-2 rounded-circle">
+
+              </div>
+            </div>
+          </div>
+        
+      </div>
+    </div>  
+        
+    <footer class="bg-dark text-white pt-5 pb-4">
+      
+      <div class="container ">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <img src="/Logo.png" alt="Logo" width="100" height="100" class="align-middle mb-2">
+            <span class="fs-5 fw-bold">Vcare</span>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <h5 class="mb-3">Our Services</h5>
+            <ul class="list-unstyled py-1">
+              <li><a href="#" class="text-decoration-none text-white">Older Medicine</a></li>
+              <li><a href="#" class="text-decoration-none text-white">Online Appoinment</a></li>
+              <li><a href="#" class="text-decoration-none text-white">Physical Appoinment</a></li>
+              <li><a href="#" class="text-decoration-none text-white">Medical Records</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 text-end">
+            <h4 class="mb-3">Contact Us</h4>
+            <p class="fs-6"><img src="" alt="Email Icon" width="16" height="16" class="me-2">
+              Email: info@vare.com</p>
+            <p class="fs-6"><img src="telephone.png" alt="Phone Icon" width="20" height="20" class="">
+              Phone: +01 97667676</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright bg-black text-white text-center py-2">
+      &copy;  2024 Vcare
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
 </body>
 </html>
