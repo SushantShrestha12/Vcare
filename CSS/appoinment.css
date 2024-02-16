@@ -1,0 +1,79 @@
+body {
+    background: linear-gradient(
+      180deg,
+      rgba(201, 241, 255, 0.5) 0%,
+      rgba(166, 227, 246, 0.5) 100%
+    );
+  }
+header {
+  height: 100vh;
+}
+.nav-link::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #0000CD;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-link:hover:after{
+  width: 100%;
+}
+
+.container h2 {
+  margin-left: -18px; /* Adjust this value to reduce the gap */ 
+}
+
+.Login-button {
+  background-color:rgba(36, 102, 255, 1);
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+}
+h1 {
+  font-size: 77px;
+}
+p {
+  font-size: 30px;
+}
+
+.col-sm-6 img {
+  margin-top: 50px;
+}
+.bttn {
+  background-color:rgba(36, 102, 255, 1);
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 8px 10px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.hero-img {
+  width: 750px;
+}
+
+/* Our Service */
+h2 {
+  font-size: 45px;
+}
+
+span {
+  margin-left: -18px;
+}
+
+
+.custom-box {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.custom-box img {
+  max-width: 100%;
+  height: auto;
+}
