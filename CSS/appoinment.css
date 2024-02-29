@@ -3,8 +3,8 @@ body {
       180deg,
       rgba(201, 241, 255, 0.5) 0%,
       rgba(166, 227, 246, 0.5) 100%
-    );
-  }
+  );
+}
 header {
   height: 100vh;
 }
@@ -26,24 +26,10 @@ header {
   margin-left: -18px; /* Adjust this value to reduce the gap */ 
 }
 
-.Login-button {
-  background-color:rgba(36, 102, 255, 1);
-  font-size: 14px;
-  padding: 8px 20px;
-  border-radius: 50px;
-  color: #fff;
-  text-decoration: none;
-}
-h1 {
-  font-size: 77px;
-}
-p {
+h2 {
   font-size: 30px;
 }
 
-.col-sm-6 img {
-  margin-top: 50px;
-}
 .bttn {
   background-color:rgba(36, 102, 255, 1);
   font-size: 20px;
@@ -53,13 +39,9 @@ p {
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.hero-img {
-  width: 750px;
-}
 
-/* Our Service */
 h2 {
-  font-size: 45px;
+  font-size: 30px;
 }
 
 span {
@@ -69,4 +51,10 @@ span {
 .upperFooter {
   height: 200px;
   background-color: #333;
+}
+
+.Appoinment {
+  background: rgba(255, 255, 255, 0.7);
+  height: 80%;
+  box-shadow: 3px 5px 15px #333;     /* Can be given in main class of Medicine Class. Foor jastai daykhay ra yata css dayko*/
 }
