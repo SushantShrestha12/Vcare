@@ -28,7 +28,7 @@ document
 
       if (response.ok) {
         window.location.href = "/HTML/Login.html";
-        alert("Successfully created. Please login to continue.")
+        alert("Successfully created. Please login to continue.");
       }
     } catch (error) {
       console.log(error);
