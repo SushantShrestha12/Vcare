@@ -1,0 +1,131 @@
+body {
+    background: linear-gradient(
+      180deg,
+      rgba(201, 241, 255, 0.5) 0%,
+      rgba(166, 227, 246, 0.5) 100%
+    );
+    padding-bottom: 100px;
+  }
+  
+  .nav-link::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #0000CD;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .nav-link:hover:after {
+    width: 100%;
+  }
+  
+  .container h2 {
+    margin-left: -18px; /* Adjust this value to reduce the gap */
+  }
+  
+  .Login-button {
+    background-color: rgba(36, 102, 255, 1);
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .bttn {
+    background-color: rgba(36, 102, 255, 1);
+    font-size: 20px;
+    color: #fff;
+    box-shadow: 0 8px 10px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .medical-history-container {
+    background-color: rgb(255, 255, 255);
+    width: 1300px;
+    height: 300px;
+    border-radius: 40px;
+    display: flex;
+    padding: 40px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .date h3 {
+    display: inline; 
+    margin-right: 10px; 
+  }
+  
+  .date p {
+    font-size: 25px;
+    display: inline; /* Make the p element inline */
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  .left,
+  .right {
+    width: calc(50% - 20px); /* Adjust according to your needs */
+  }
+  
+  .left {
+    margin-right: 20px; /* Add margin between left and right */
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 450px; 
+  }
+
+  .date,
+  .reason,
+  .notes,
+  .examined-by {
+    margin-bottom: 20px; /* Add space between elements */
+  }
+  
+  .doctor-details {
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    border-radius: 24px;
+    padding: 10px; 
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .doctor-image img {
+    width: 44px;
+    height: 44px;
+    margin-left: -7px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .view-more-button {
+    color: #2d7fd6;
+    text-decoration: none;
+    align-self: flex-end;
+  }
+  
+  .view-more-button:hover {
+    color: #0056b3;
+  }
+  
+  h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .Footer {
+    height: 200px; /* Adjust height as needed */
+  }
+  
