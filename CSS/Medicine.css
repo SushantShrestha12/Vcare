@@ -51,7 +51,7 @@ p {
 }
 
 h2 {
-  font-size: 45px;
+  font-size: 30px;
 }
 
 span {
@@ -64,7 +64,7 @@ span {
 }
 
 .Medicine {
-  background-color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.7);
   height: 80%;
   box-shadow: 3px 5px 15px #333;     /* Can be given in main class of Medicine Class. Foor jastai daykhay ra yata css dayko*/
 }
