@@ -26,24 +26,10 @@ header {
   margin-left: -18px; /* Adjust this value to reduce the gap */ 
 }
 
-.Login-button {
-  background-color:rgba(36, 102, 255, 1);
-  font-size: 14px;
-  padding: 8px 20px;
-  border-radius: 50px;
-  color: #fff;
-  text-decoration: none;
-}
-h1 {
-  font-size: 77px;
-}
 p {
   font-size: 30px;
 }
 
-.col-sm-6 img {
-  margin-top: 50px;
-}
 .bttn {
   background-color:rgba(36, 102, 255, 1);
   font-size: 20px;
@@ -53,13 +39,11 @@ p {
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.hero-img {
-  width: 750px;
-}
 
-/* Our Service */
+
+/* Vcare font */
 h2 {
-  font-size: 45px;
+  font-size: 30px;
 }
 
 span {
