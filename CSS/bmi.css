@@ -31,13 +31,15 @@ body {
   }
   .glassmorphic-box {
     align-items: center;
-    margin-top: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     border-radius: 40px;
-    padding: 10px 30px 50px 30px;
+    padding: 0px 30px 30px 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
- 
+    margin-left: auto;
+    margin-right: auto;
   }
 
 .image-container .col-3, .image-container .col-5 {
@@ -128,7 +130,103 @@ input[type="number"]::-moz-outer-spin-button {
   border-color: transparent;
 }
 
-.bmi-result{
+#form-control{
+  margin: 5px;
+}
+
+.Categories{
+  padding: 4px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  width: 300px;
+  height: 200px;
+}
+
+.bmi-meter {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.FAQ{
+  padding: 4px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  width: 300px;
+  height: auto;
+}
+
+/* Add your CSS styles here */
+.faq-question {
+  cursor: pointer;
+  transition: font-size 0.3s ease-in-out; /* Add transition effect */
+  
+}
+
+.faq-answer {
+  display: none;
+}
+
+.faq-question:hover {
+  font-size: 20px;
+
+}
+
+
+/* Style the meter */
+#guage {
+  position: relative;
+  margin: auto;
+  margin-bottom: -150px;
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
+}
+#guage svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#guage .value {
+  font-size: 20px;
+  position: relative;
+  top: 100px;
   text-align: center;
-  margin-top: 70px;
+}
+
+#spinner {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  transition: transform 1.5s ease-in-out;
+  transform: rotate(45deg);
+}
+
+#pointer {
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 12px solid rgb(0, 0, 0);
+  position: absolute;
+  z-index: 20;
+  top: 105px;
+  left: 5px;
+  width: 0px;
+}
+
+#guage .small-text {
+  font-size: 14px;
+  position: relative;
+  text-align: center;
+  top: 95px;
+}
+
+.bmi-result {
+  position: absolute; /* Position the result container absolutely */
+  top: 0; /* Position from the top of the nearest positioned ancestor */
+  left: 0; /* Position from the left of the nearest positioned ancestor */
 }
