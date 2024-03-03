@@ -70,7 +70,18 @@
               </li>
             </ul>
           </div>
-          <a href="/HTML/Login.html" class="Login-button fw-medium">Login</a>
+          <a href="/HTML/Login.html" class="Login-button fw-medium" id="login"
+            >Login</a
+          >
+          <div class="dropdown" id="userLogo">
+            <div class="d-flex justify-content-center mt-4" data-bs-toggle="dropdown">
+              <img src="/Images/man-2.png" alt="user" width="50" height="50" />
+            </div>
+            <p class="dropdown-toggle" data-bs-toggle="dropdown" style="font-size: 12px">Sushant</p>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
 
@@ -214,10 +225,10 @@
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-center">
               <a href="/HTML/bmi.html">
-              <button type="button" class="btn btn-dark me-2 mt-5">
-                Calculate BMI
-              </button>
-            </a>
+                <button type="button" class="btn btn-dark me-2 mt-5">
+                  Calculate BMI
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -350,5 +361,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <script src="/JS/index.js"></script>
   </body>
 </html>
