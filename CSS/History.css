@@ -28,14 +28,6 @@ h2 {
     margin-left: -18px; /* Adjust this value to reduce the gap */
   }
   
-  .Login-button {
-    background-color: rgba(36, 102, 255, 1);
-    font-size: 14px;
-    padding: 8px 20px;
-    border-radius: 50px;
-    color: #fff;
-    text-decoration: none;
-  }
   
   .bttn {
     background-color: rgba(36, 102, 255, 1);
@@ -116,16 +108,14 @@ h2 {
     color: #2d7fd6;
     text-decoration: none;
     align-self: flex-end;
-  }
+}
   
-  .view-more-button:hover {
+.view-more-button:hover {
     color: #0056b3;
-  }
+}
   
   h3 {
     font-family: 'Roboto Mono', monospace;
     font-size: 25px;
     font-weight: bold;
-  }
-  
-  
+}
