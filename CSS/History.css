@@ -9,7 +9,13 @@ body {
 h2 {
   font-size: 30px;
 }
+
+
+h2 {
+  font-size: 30px;
+}
   
+.nav-link::after {
 .nav-link::after {
     content: '';
     width: 0%;
@@ -18,6 +24,7 @@ h2 {
     display: block;
     margin: auto;
     transition: 0.5s;
+}
 }
   
   .nav-link:hover:after {
