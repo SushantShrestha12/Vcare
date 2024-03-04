@@ -22,6 +22,11 @@ document
 
       if (response.ok) {
         window.location.href = "/HTML/index.html";
+        alert("Logged in successfully!");
+        localStorage.setItem("Name", "Sushant");
+      }
+      else{
+        alert("Invalid username or password.");
       }
     } catch (error) {
       console.log(error);
