@@ -1,0 +1,124 @@
+body {
+    background: linear-gradient(
+      180deg,
+      rgba(201, 241, 255, 0.5) 0%,
+      rgba(166, 227, 246, 0.5) 100%
+    );
+  }
+header {
+  height: 100vh;
+}
+.nav-link::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #0000CD;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-link:hover:after{
+  width: 100%;
+}
+
+.container h2 {
+  margin-left: -18px; /* Adjust this value to reduce the gap */ 
+}
+
+.Hospital {
+    background: rgba(255, 255, 255, 0.7);
+    height: 500px;
+    box-shadow: 3px 5px 15px #333;     /* Can be given in main class of Medicine Class. Foor jastai daykhay ra yata css dayko*/
+  }
+  
+
+
+.hospitalDetails {
+  background: url('/Images/teaching hospital.jpg') center center no-repeat;
+  width: 1600px; /* Set the width of the box */
+  height: 300px; /* Set the height of the box */
+  overflow: hidden; /* Set position to relative for absolute positioning */
+}
+
+.infoBox {/* Position the infoBox relative to the hospitalDetails */
+  top: 70%; /* Position the infoBox vertically centered */
+  right: 20px; /* Adjust as needed */
+  transform: translateY(-50%); 
+  width: 290px;
+  height: 140px;
+  border-radius: 20px;
+  padding: 10px 5px 10px 20px;
+}
+
+.hospitalInfo {
+  padding: 20px; /* Add padding to the hospitalInfo */
+  color: #000000;
+
+}
+
+
+
+
+.glassmorphic-box {
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    padding: 0px 30px 30px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 20px 10px 50px;
+  }
+
+
+  .search-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+.card{
+  width: 200px; 
+  height: 300px;
+}
+
+.card-title{
+  font-size: 16px;
+  text-align: center;
+}
+.btn{
+  align-items: center;
+}
+.col-md-3 {
+  width: calc(100% / 4); /* Adjust for 5 cards in a row */
+  flex: 0 0 calc(100% / 4); /* Adjust for consistent width on smaller screens */
+}
+
+h1 {
+  font-size: 77px;
+}
+p {
+  font-size: 30px;
+}
+
+.col-sm-6 img {
+  margin-top: 50px;
+}
+
+.hero-img {
+  width: 750px;
+}
+
+/* Vcare font */
+h2 {
+  font-size: 30px;
+}
+
+span {
+  margin-left: -18px;
+}
+
