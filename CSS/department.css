@@ -35,19 +35,16 @@ header {
 
 
 .hospitalDetails {
-  background: #fffbfb url('/Images/teaching hospital.jpg') center center no-repeat;
+  background: url('/Images/teaching hospital.jpg') center center no-repeat;
   width: 1600px; /* Set the width of the box */
   height: 300px; /* Set the height of the box */
-  overflow: hidden; /* Hide any content that extends beyond the box */
-  position: relative; /* Set position to relative for absolute positioning */
+  overflow: hidden; /* Set position to relative for absolute positioning */
 }
 
-.infoBox {
-  position: absolute; /* Position the infoBox relative to the hospitalDetails */
+.infoBox {/* Position the infoBox relative to the hospitalDetails */
   top: 70%; /* Position the infoBox vertically centered */
   right: 20px; /* Adjust as needed */
-  transform: translateY(-50%); /* Center vertically */
-  background-color: rgb(255, 255, 255);
+  transform: translateY(-50%); 
   width: 290px;
   height: 140px;
   border-radius: 20px;
@@ -97,8 +94,8 @@ header {
   align-items: center;
 }
 .col-md-3 {
-  width: calc(100% / 5); /* Adjust for 5 cards in a row */
-  flex: 0 0 calc(100% / 5); /* Adjust for consistent width on smaller screens */
+  width: calc(100% / 4); /* Adjust for 5 cards in a row */
+  flex: 0 0 calc(100% / 4); /* Adjust for consistent width on smaller screens */
 }
 
 h1 {
