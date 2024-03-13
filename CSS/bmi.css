@@ -1,0 +1,229 @@
+body {
+    background: linear-gradient(90deg,
+      #F0C0F2 40%,
+      #58D4F9 100%
+    );
+  }
+
+.nav-link::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #0000CD;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-link:hover:after{
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .image-container {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    position: relative;
+  }
+  .glassmorphic-box {
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
+    padding: 0px 30px 30px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.image-container .col-3, .image-container .col-5 {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* CSS for image containers */
+.col-3:hover #female-image {
+  transform: scale(1.1); /* Make female image bigger on hover */
+  opacity: 1; /* Increase opacity */
+  cursor: url('/Images/iCursorX.png'), auto;
+}
+
+.col-5:hover #male-image {
+  transform: scale(1.1); /* Make male image bigger on hover */
+  opacity: 1; /* Increase opacity */
+  cursor: url('/Images/iCursorX.png'), auto;
+}
+
+#female-image:hover + #female-label {
+  opacity: 1;
+  top: 50%;
+  left: 39%;
+}
+
+#male-container:hover #male-label {
+  opacity: 1;
+  top: 50%;
+  right: 34%;
+}
+
+.gender-label {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Add styles to disable hover effect for gender-selected elements */
+.gender-selected:hover {
+  pointer-events: none;
+}
+
+/* Hide the up and down arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-moz-inner-spin-button,
+input[type="number"]::-moz-outer-spin-button {
+  -webkit-appearance: none; /* Chrome, Safari */
+  -moz-appearance: none; /* Firefox */
+  appearance: none; /* Standard */
+}
+
+
+.left-side {
+  width: 350px;
+  float: left;
+  align-items: center;
+  margin-left: -400px; /* Adjust this value to move the data fill section more to the left */
+}
+
+.right-side {
+  width: 350px;
+  float: right;
+  margin-right: -400px;
+  margin-left: 150px;
+
+}
+
+.input-group {
+  width: 50%;
+  margin-bottom: 10px; /* Add margin between input fields */
+}
+
+/* Apply transition for smooth color change */
+.btn {
+  font-size: 20px;
+  font-family: monospace;
+}
+
+/* Apply animation for glowing effect */
+#female-calculate-bmi:hover{
+  color: #F0C0F2;
+  border-color: transparent;
+}
+#male-calculate-bmi:hover{
+  color: #58D4F9;
+  border-color: transparent;
+}
+
+#form-control{
+  margin: 5px;
+}
+
+.Categories{
+  padding: 4px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  width: 300px;
+  height: 200px;
+}
+
+.bmi-meter {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.FAQ{
+  padding: 4px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  width: 300px;
+  height: auto;
+}
+
+/* Add your CSS styles here */
+.faq-question {
+  cursor: pointer;
+  transition: font-size 0.3s ease-in-out; /* Add transition effect */
+  
+}
+
+.faq-answer {
+  display: none;
+}
+
+.faq-question:hover {
+  font-size: 20px;
+
+}
+
+
+/* Style the meter */
+#guage {
+  position: relative;
+  margin: auto;
+  margin-bottom: -150px;
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
+}
+#guage svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#guage .value {
+  font-size: 20px;
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+#spinner {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  transition: transform 1.5s ease-in-out;
+  transform: rotate(45deg);
+}
+
+#pointer {
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 12px solid rgb(0, 0, 0);
+  position: absolute;
+  z-index: 20;
+  top: 105px;
+  left: 5px;
+  width: 0px;
+}
+
+#guage .small-text {
+  font-size: 14px;
+  position: relative;
+  text-align: center;
+  top: 95px;
+}
+
+.bmi-result {
+  position: absolute; /* Position the result container absolutely */
+  top: 0; /* Position from the top of the nearest positioned ancestor */
+  left: 0; /* Position from the left of the nearest positioned ancestor */
+}
