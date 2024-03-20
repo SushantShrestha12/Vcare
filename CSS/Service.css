@@ -1,15 +1,13 @@
-body {
-    /* background: linear-gradient(
+
+/*body {
+     background: linear-gradient(
       180deg,
       rgba(201, 241, 255, 0.5) 0%,
       rgba(166, 227, 246, 0.5) 100%
-    ); */
+    ); 
     
-}
-header {
-    height: 100vh;
-    /* overflow: hidden; */
-  }
+}*/
+
 .nav-link::after {
     content: "";
     width: 0%;
@@ -27,18 +25,24 @@ header {
 .container h2 {
     margin-left: -18px; /* Adjust this value to reduce the gap */
 }
-.About{
-    background:  #e5e3f745;
-    height: 30%;
+
+.Service{
+   margin-left: 140px;
 }
-.Our-Vision{
-    margin-top: 70px;
-   margin-left: 150px;
-   line-height: 30px;
+
+.Details{
+    margin-left: 145px;
+}
+
+.virtual-consultation-container {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px;
+    margin-bottom: 20px;
 }
 .card{
     border: none;
 }
-.Our-Story{
-    margin-top: 60px;
+
+.Virtual-Consul{
+    margin-top: 100px;
 }
