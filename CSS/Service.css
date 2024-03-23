@@ -7,7 +7,10 @@
     ); 
     
 }*/
-
+.navbar{
+    font-family: "Taviraj", serif;
+    font-style: normal;
+}
 .nav-link::after {
     content: "";
     width: 0%;
@@ -45,4 +48,37 @@
 
 .Virtual-Consul{
     margin-top: 100px;
+}
+
+.Service-text{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+.virtual-consultation-container h3{
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.virtual-consultation-container p{
+    font-family: "Mukta Vaani", sans-serif;
+    font-style: normal;
+    line-height: 27px;
+    font-size: 17px;
+}
+
+.container-fluid{
+    background: linear-gradient(
+      180deg,
+      rgba(201, 241, 255, 0.188) 0%,
+      rgba(211, 239, 248, 0.208) 100%
+    ); 
+}
+.card{
+    background: none;
+}
+.card-text{
+    font-family: "Mukta Vaani", sans-serif;
+    font-style: normal;
+    line-height: 25px;
 }

@@ -8,6 +8,11 @@ body {
 header {
   height: 100vh;
 }
+.navbar{
+  font-family: "Taviraj", serif;
+  font-weight: 200;
+  font-style: normal;
+}
 .nav-link::after {
   content: '';
   width: 0%;
@@ -48,4 +53,17 @@ span {
   background: rgb(228, 241, 245);
   height: 80%;
   box-shadow: 3px 5px 15px #333;     /* Can be given in main class of Medicine Class. Foor jastai daykhay ra yata css dayko*/
+}
+.Visit-Hospital{
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 60px;
+}
+.card-text{
+  font-family: "Mukta Vaani", sans-serif;
+  font-style: normal;
+}
+.card-title{
+  font-family: "Poppins", sans-serif;
 }
