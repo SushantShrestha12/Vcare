@@ -12,12 +12,30 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/CSS/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Mukta+Vaani:wght@200;300;400;500;600;700;800&family=Rasa:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <!-- header Design -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-none">
+      <nav class="navbar navbar-expand-lg  bg-body-none">
         <div class="container">
           <a class="navbar-brand mx-auto" href="/HTML/index.html">
             <img
@@ -42,29 +60,29 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+              <li class="nav-item me-3">
                 <a
-                  class="nav-link active fw-medium"
+                  class="nav-link active fw-medium fs-4"
                   aria-current="page"
                   href="/HTML/index.html"
                   >Home</a
                 >
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item me-3">
                 <a
-                  class="nav-link active fw-medium"
+                  class="nav-link active fw-medium fs-4"
                   aria-current="page"
-                  href="#Service"
+                  href="/HTML/Service.html"
                   >Services</a
                 >
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item me-3">
                 <a
-                  class="nav-link active fw-medium"
+                  class="nav-link active fw-medium fs-4"
                   aria-current="page"
-                  href="#"
+                  href="/HTML/About.html"
                   >About</a
                 >
               </li>
@@ -74,10 +92,19 @@
             >Login</a
           >
           <div class="dropdown" id="userLogo">
-            <div class="d-flex justify-content-center mt-4" data-bs-toggle="dropdown">
+            <div
+              class="d-flex justify-content-center mt-4"
+              data-bs-toggle="dropdown"
+            >
               <img src="/Images/man-2.png" alt="user" width="50" height="50" />
             </div>
-            <p class="dropdown-toggle" data-bs-toggle="dropdown" style="font-size: 12px">Sushant</p>
+            <p
+              class="dropdown-toggle"
+              data-bs-toggle="dropdown"
+              style="font-size: 12px"
+            >
+              Sushant
+            </p>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Logout</a></li>
             </ul>
@@ -90,17 +117,19 @@
           <div class="row g-5">
             <div class="d-flex align-items-center justify-content-center">
               <div class="col-12 col-lg-6">
-                <h1 class="ms-5 mt-4 lh-sm">Welcome to <br />Vcare</h1>
+                <h1 class="ms-5 mt-4 lh-sm Welcome-Heading">
+                  Welcome to <br />Vcare
+                </h1>
                 <p class="p px-5 fw-medium">
-                  Find your doctor and make an <br />appoinment
+                  Find your doctor and make an <br />appointment
                 </p>
                 <a href="/HTML/appointment.html">
                   <button
                     type="submit"
-                    class="bttn btn-primary w-50 mt-3 ms-5 rounded-5 shadow"
+                    class="bttn btn-primar p-3 w-50 mt-3 ms-5 rounded-5 shadow"
                   >
                     <!--Change of class btn to bttn-->
-                    Book an Appoinment
+                    Book an Appointment
                   </button>
                 </a>
               </div>
@@ -123,7 +152,7 @@
       <!--Our Service-->
       <div class="Our Service pt-5" id="Service">
         <div class="Our-service container">
-          <h2 class="text-dark fw-bold text-center pb-5 lh-base">
+          <h2 class="text-dark fw-bold text-center pb-4 lh-base our-Service">
             Our Services
           </h2>
         </div>
@@ -138,7 +167,7 @@
                   alt="Smiley doctor"
                 />
                 <div class="card-body">
-                  <h4 class="card-title">Book an appoinment with doctor.</h4>
+                  <h4 class="p card-title">Book an appointment with doctor.</h4>
                   <a href="/HTML/appointment.html">
                     <button type="button" class="btn btn-dark">
                       Consult Now
@@ -155,7 +184,7 @@
                   alt="Smiley doctor"
                 />
                 <div class="card-body">
-                  <h4 class="card-title">Order Medicines Online.</h4>
+                  <h4 class="p card-title">Order Medicines Online.</h4>
                   <a href="/HTML/Medicine.html">
                     <button type="button" class="btn btn-dark">
                       Order Now!
@@ -172,7 +201,7 @@
                   alt="Smiley doctor"
                 />
                 <div class="card-body">
-                  <h4 class="card-title">Book a physical appoinment.</h4>
+                  <h4 class="p card-title">Book a physical appointment.</h4>
                   <a href="/HTML/Hospital.html">
                     <button type="button" class="btn btn-dark">
                       Book Now!
@@ -189,7 +218,7 @@
                   alt="Smiley doctor"
                 />
                 <div class="card-body">
-                  <h4 class="card-title">Trace your medical history</h4>
+                  <h4 class="p card-title">Trace your medical history</h4>
                   <a href="/HTML/History.html">
                     <button type="button" class="btn btn-dark">View</button>
                   </a>
@@ -211,11 +240,11 @@
             />
           </div>
           <div class="col-12 col-lg-7">
-            <h4 class="fw-bold fs-4 mb-3">
+            <h4 class="fw-bold fs-4 mb-3 BMI">
               Calculate Your BMI for a Healthier<br />
               You
             </h4>
-            <p class="fs-6">
+            <p class="BMI-P fs-5">
               Track your progress towards a healthier lifestyle.<br /><br />
               BMI a screening tool used to estimate body fat based on your
               height and weight.<br /><br />
@@ -304,16 +333,16 @@
                 </li>
                 <li>
                   <a
-                    href="/HTML/appoinment.html"
+                    href="/HTML/appointment.html"
                     class="text-decoration-none text-white"
-                    >Online Appoinment</a
+                    >Online Appointment</a
                   >
                 </li>
                 <li>
                   <a
                     href="/HTML/Hospital.html"
                     class="text-decoration-none text-white"
-                    >Physical Appoinment</a
+                    >Physical Appointment</a
                   >
                 </li>
                 <li>

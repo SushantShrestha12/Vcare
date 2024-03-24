@@ -10,6 +10,18 @@ header {
   height: 100vh;
 }
 
+.navbar{
+    font-family: "Taviraj", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.Welcome-Heading{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Dark Mode Styles */
 .dark-mode {
   background-color: #333; /* Dark background color */
@@ -64,9 +76,25 @@ h1 {
   font-size: 77px;
 }
 p {
-  font-size: 30px;
+  font-size: 25px;
+  font-family: "Mukta Vaani", sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
 
+.our-Service{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.BMI{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.BMI-P{
+  font-family: "Mukta Vaani", sans-serif;
+  font-style: normal;
+}
 .col-sm-6 img {
   margin-top: 50px;
 }
@@ -78,6 +106,11 @@ p {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.bttn:hover{
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #101066
 }
 .hero-img {
   width: 750px;

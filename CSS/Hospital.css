@@ -8,6 +8,11 @@ body {
 header {
   height: 100vh;
 }
+.navbar{
+  font-family: "Taviraj", serif;
+  font-weight: 200;
+  font-style: normal;
+}
 .nav-link::after {
   content: '';
   width: 0%;
@@ -26,19 +31,6 @@ header {
   margin-left: -18px; /* Adjust this value to reduce the gap */ 
 }
 
-p {
-  font-size: 30px;
-}
-
-.bttn {
-  background-color:rgba(36, 102, 255, 1);
-  font-size: 20px;
-  color: #fff;
-  box-shadow: 0 8px 10px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-}
 .hero-img {
   width: 750px;
 }
@@ -55,4 +47,22 @@ span {
 .upperFooter {
   height: 200px;
   background-color: #333;
+}
+.Hospital {
+  background: rgb(228, 241, 245);
+  height: 80%;
+  box-shadow: 3px 5px 15px #333;     /* Can be given in main class of Medicine Class. Foor jastai daykhay ra yata css dayko*/
+}
+.Visit-Hospital{
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 60px;
+}
+.card-text{
+  font-family: "Mukta Vaani", sans-serif;
+  font-style: normal;
+}
+.card-title{
+  font-family: "Poppins", sans-serif;
 }

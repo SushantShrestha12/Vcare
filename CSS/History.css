@@ -35,16 +35,6 @@ h2 {
     margin-left: -18px; /* Adjust this value to reduce the gap */
   }
   
-  
-  .bttn {
-    background-color: rgba(36, 102, 255, 1);
-    font-size: 20px;
-    color: #fff;
-    box-shadow: 0 8px 10px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-  }
 
   .medical-history-container {
     background-color: rgb(255, 255, 255);

@@ -26,10 +26,6 @@ header {
   margin-left: -18px; /* Reduce gap betweeen logo and Vcare */ 
 }
 
-h1 {
-  font-size: 50px;  /* Font size of Word Medicine in containe with bg image */
-}
-
 h2 {
   font-size: 30px;
 }
@@ -47,7 +43,7 @@ span {
   background: rgba(255, 255, 255, 0.7);
   height: 80%;
   box-shadow: 3px 5px 15px #333;     /* Can be given in main class of Medicine Class. Foor jastai daykhay ra yata css dayko*/
-  background-image: url(/Images/medicineimg.jpg);
+  background-image: url(/Images/Medicine/medicineimg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
