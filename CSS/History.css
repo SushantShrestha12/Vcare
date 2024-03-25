@@ -1,9 +1,6 @@
-body {
-    background: linear-gradient(
-      180deg,
-      rgba(201, 241, 255, 0.5) 0%,
-      rgba(166, 227, 246, 0.5) 100%
-    );
+* {
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
@@ -115,4 +112,15 @@ h2 {
     font-family: 'Roboto Mono', monospace;
     font-size: 25px;
     font-weight: bold;
+}
+
+.About{
+  background:  #e5e3f745;
+  height: 30%;
+}
+.About-Us{
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 60px;
+  font-style: normal;
 }

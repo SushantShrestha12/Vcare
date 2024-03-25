@@ -1,41 +1,37 @@
-body {
-    background: linear-gradient(
-      180deg,
-      rgba(201, 241, 255, 0.5) 0%,
-      rgba(166, 227, 246, 0.5) 100%
-  );
+* {
+  margin: 0;
+  padding: 0;
 }
 header {
   height: 100vh;
 }
 
-.navbar{
+.navbar {
   font-family: "Taviraj", serif;
   font-weight: 200;
   font-style: normal;
 }
 .nav-link::after {
-  content: '';
+  content: "";
   width: 0%;
   height: 2px;
-  background: #0000CD;
+  background: #0000cd;
   display: block;
   margin: auto;
   transition: 0.5s;
 }
 
-.nav-link:hover:after{
+.nav-link:hover:after {
   width: 100%;
 }
 
 .container h2 {
-  margin-left: -18px; /* Adjust this value to reduce the gap */ 
+  margin-left: -18px; /* Adjust this value to reduce the gap */
 }
 
 h2 {
   font-size: 30px;
 }
-
 
 span {
   margin-left: -18px;
@@ -45,30 +41,103 @@ span {
   height: 200px;
   background-color: #333;
 }
-.text-center{
+.text-center {
   font-family: "Cormorant Garamond", serif;
   font-weight: 300;
   font-style: normal;
 }
-.B{
+.B {
   font-size: 60px;
 }
 .Appoinment {
   background: rgba(255, 255, 255, 0.7);
   height: 80%;
-  box-shadow: 3px 5px 15px #333;     /* Can be given in main class of Medicine Class. Foor jastai daykhay ra yata css dayko*/
+  box-shadow: 3px 5px 15px #333; /* Can be given in main class of Medicine Class. Foor jastai daykhay ra yata css dayko*/
   background-repeat: no-repeat;
   background-image: url(/Images/Doctors/Ba-bg.jpg);
   background-size: cover;
 }
-.card-title{
+.card-title {
   font-size: 25px;
   font-family: "Mukta Vaani", sans-serif;
   font-weight: 200;
   font-style: normal;
 }
 
-.card-text{
+.card-text {
   font-family: "Poppins", sans-serif;
   font-weight: 150;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Time button styles */
+.time-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.time-buttons button:hover {
+  background-color: #45a049;
+}
+
+/* Animation */
+.fade-in {
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
 }

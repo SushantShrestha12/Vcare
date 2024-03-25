@@ -17,7 +17,7 @@
     <!--HEADER SECTION-->
     <nav class="navbar navbar-expand-lg bg-body-none">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand mx-auto" href="/HTML/index.html">
           <img
             src="/Images/Logo.png"
             alt="Logo"
@@ -26,7 +26,7 @@
             class="d-inline-block align-text-top"
           />
         </a>
-        <h2>Vcare</h2>
+        <h2 class="mt-3">Vcare</h2>
         <button
           class="navbar-toggler"
           type="button"
@@ -40,24 +40,29 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+            <li class="nav-item me-3">
               <a
-                class="nav-link active fw-medium"
+                class="nav-link active fw-medium fs-4"
                 aria-current="page"
-                href="index.html"
+                href="/HTML/index.html"
                 >Home</a
               >
             </li>
-            <li class="nav-item">
+
+            <li class="nav-item me-3">
               <a
-                class="nav-link active fw-medium"
+                class="nav-link active fw-medium fs-4"
                 aria-current="page"
-                href="#Service"
+                href="/HTML/Service.html"
                 >Services</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link active fw-medium" aria-current="page" href="#"
+
+            <li class="nav-item me-3">
+              <a
+                class="nav-link active fw-medium fs-4"
+                aria-current="page"
+                href="/HTML/About.html"
                 >About</a
               >
             </li>
@@ -65,83 +70,81 @@
         </div>
       </div>
     </nav>
-
     <!-- Div form section -->
     <div class="container">
-      <div class="d-flex justify-content-between">
+      <div class="row justify-content-between">
         <div class="col-md-6">
           <form class="rounded-3 mx-auto px-5 py-5 w-75 signupForm">
-            <h2 class="text-center py-2">Sign Up</h2>
-            <div class="form-group mb-2">
+            <h2 class="text-center pb-4">Sign Up</h2>
+            <div class="form-group mb-4">
               <input
                 type="text"
-                class="form-control rounded-4 px-3"
+                class="form-control rounded-pill px-4"
                 id="username"
                 placeholder="Full Name"
                 required
               />
             </div>
-            <div class="form-group mb-2">
+            <div class="form-group mb-4">
               <input
-                type="text"
-                class="form-control rounded-4 px-3"
+                type="tel"
+                class="form-control rounded-pill px-4"
                 id="number"
                 placeholder="Phone Number"
                 required
               />
             </div>
-            <div class="form-group mb-2">
+            <div class="form-group mb-4">
               <input
                 type="email"
-                class="form-control rounded-4 px-3"
+                class="form-control rounded-pill px-4"
                 id="email"
                 placeholder="Enter your email"
                 required
               />
             </div>
-            <div class="form-group mb-2">
+            <div class="form-group mb-4">
               <input
                 type="password"
-                class="form-control rounded-4 px-3"
+                class="form-control rounded-pill px-4"
                 id="password"
                 placeholder="Password"
                 required
               />
             </div>
-            <div class="form-group mb-2">
+            <div class="form-group mb-4">
               <input
                 type="password"
-                class="form-control rounded-4 px-3"
+                class="form-control rounded-pill px-4"
                 id="confirm-password"
                 placeholder="Confirm Password"
                 required
               />
             </div>
-            <div class="d-flex justify-content-center">
+            <div class="d-grid gap-2">
               <button
                 type="button"
-                class="btn btn-primary w-75 mt-3 rounded-5 fs-5"
+                class="btn btn-primary btn-lg rounded-pill"
                 id="signUpBtn"
               >
                 Sign Up
               </button>
             </div>
           </form>
-          <h6 class="text-center mt-4">
+          <p class="text-center mt-4">
             Already have an account? <a href="/HTML/Login.html">Login</a>
-          </h6>
+          </p>
         </div>
         <div class="col-md-6">
           <img
             src="/Images/Medicine.png"
-            class="img rounded-4"
+            class="img-fluid rounded-4"
             alt="Medical Image"
-            width="100%"
-          />
+          /> 
         </div>
       </div>
     </div>
-
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

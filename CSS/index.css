@@ -1,22 +1,19 @@
-body {
-  background: linear-gradient(
-    180deg,
-    rgba(201, 241, 255, 0.5) 0%,
-    rgba(166, 227, 246, 0.5) 100%
-  );
+*{
+  margin: 0;
+  padding: 0;
 }
 
 header {
   height: 100vh;
 }
 
-.navbar{
-    font-family: "Taviraj", serif;
-    font-weight: 200;
-    font-style: normal;
+.navbar {
+  font-family: "Taviraj", serif;
+  font-weight: 200;
+  font-style: normal;
 }
 
-.Welcome-Heading{
+.Welcome-Heading {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -82,22 +79,23 @@ p {
   font-style: normal;
 }
 
-.our-Service{
+.our-Service {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
 
-.BMI{
+.BMI {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
-.BMI-P{
+.BMI-P {
   font-family: "Mukta Vaani", sans-serif;
   font-style: normal;
 }
 .col-sm-6 img {
   margin-top: 50px;
 }
+
 .bttn {
   background-color: rgba(36, 102, 255, 1);
   font-size: 20px;
@@ -106,12 +104,15 @@ p {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: background-color 0.3s, transform 0.2s;
 }
-.bttn:hover{
-  background-color: transparent;
-  color: #000;
-  border: 2px solid #101066
+
+.bttn:hover {
+  background-color: rgba(36, 102, 255, 0.8); 
+  transform: translateY(-2px); 
 }
+
+
 .hero-img {
   width: 750px;
 }
@@ -124,3 +125,46 @@ h2 {
 span {
   margin-left: -18px;
 }
+
+/* Hover on cards */
+.hover-effect:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.hover-effect .card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.hover-effect:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Additional CSS for flexbox */
+.row-cols-1 > * {
+  display: flex;
+}
+
+.row-cols-1 .card {
+  flex: 1;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex: 1;
+}
+
+.bmi-btn{
+  width: 140px;
+}
+
+.bmi-btn:hover{
+  background-color: rgba(32, 33, 36, 0.8); 
+  transform: translateY(-2px); 
+}
+
+

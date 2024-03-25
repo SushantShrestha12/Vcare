@@ -115,312 +115,200 @@
     </header>
 
     <main>
-      <!--
-    <div class="container mb-5 ">
-      <div class="row">
-        <div class="col ">
-          <img src="/Images/doctor.png" alt="">
-        </div>
-        <div class="col d-flex justify-content-between align-items-center">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Select Your Concerns
-            </button>
-            <ul class="dropdown-menu">
-               <li><a class="dropdown-item" href="#"></a></li>                Concerns Rakn na baki
-              <li><a class="dropdown-item" href="#"></a></li>                 Concerns Rakn na baki 
-              <li><a class="dropdown-item" href="#"></a></li>                 Concerns Rakn na baki
-             </ul>
+      <div class="container my-5">
+        <div class="row">
+          <div class="col">
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Select Your Concerns
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Concern 1</a></li>
+                <li><a class="dropdown-item" href="#">Concern 2</a></li>
+                <li><a class="dropdown-item" href="#">Concern 3</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div> 
-    -->
+      
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Select a Time:</h3>
+          <div id="timeButtons" class="time-buttons"></div>
+        </div>
+      </div>      
+   
 
       <div class="container mt-5">
-        <!--First Row-->
-        <div class="row justify-content-evenly">
-          <div class="col-md-5">
-            <div class="card mb-3 shadow p-3 mb-5 bg-body-tertiary rounded">
-              <!--Shadow and Maxwidth given-->
-              <div class="row g-3">
+        <!-- First Row -->
+        <div class="row justify-content-evenly" >
+          <div class="col-md-5 mb-3">
+            <div class="card h-100 mb-3 shadow rounded">
+              <div class="row g-0">
                 <div class="col-md-4">
-                  <img
-                    src="/Images/Doctors/Dr. Rabin Poudel, MD, MPH.png"
-                    class="img-fluid rounded-circle py-5"
-                    alt="Doctor Rabin"
-                  />
+                  <img src="/Images/Doctors/Dr. Rabin Poudel, MD, MPH.png" class="img-fluid rounded-circle p-3" alt="Doctor Rabin">
                 </div>
                 <div class="col-md-8">
-                  <div class="card-body">
-                    <h6 class="card-title">Dr. Rabin Poudel, MD, MPH</h6>
-                    <!--Should be changed-->
-                    <p class="card-text fs-6 fw-normal">Pediatrician</p>
-                    <!--Should be changed-->
-                    <p class="card-text fs-6 fw-normal">
-                      Experience: Dr. Poudel has been practicing pediatrics for
-                      over 12 years, with a focus on child health and
-                      development.
-                    </p>
-                    <!--Should be changed-->
-                    <p class="card-text fs-6 fw-semibold">
-                      Next Available Time:
-                    </p>
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title fw-bold">Dr. Rabin Poudel, MD, MPH</h5>
+                    <p class="mb-1">Pediatrician</p>
+                    <p class="mb-1">Experience: Over 12 years</p>
+                    <p class="mb-1">Next Available Time:</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="card mb-3 card mb-3 shadow p-3 mb-5 bg-body-tertiary rounded"
-            style="max-width: 500px"
-          >
-            <!--Shadow and Maxwidth given-->
-            <div class="row g-3">
-              <div class="col-md-4">
-                <img
-                  src="/Images/Doctors/Dr. Anika Sharma, MD, PhD.png"
-                  class="img-fluid rounded-circle py-5"
-                  alt="Doctor Anika"
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h6 class="card-title">Dr. Anika Sharma,MD,PhD</h6>
-                  <!--Should be changed-->
-                  <p class="card-text fs-6 fw-normal">Neurologist</p>
-                  <!--Should be changed-->
-                  <p class="card-text fs-6 fw-normal">
-                    Experience: She earned her medical degree (MD) and went on
-                    to obtain a Ph.D. in Neuroscience.
-                  </p>
-                  <!--Should be changed-->
-                  <p class="card-text fs-6 fw-semibold">Next Available Time:</p>
+          <div class="col-md-5 mb-3">
+            <div class="card h-100 mb-3 shadow rounded">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="/Images/Doctors/Dr. Anika Sharma, MD, PhD.png" class="img-fluid rounded-circle p-3" alt="Doctor Anika">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title fw-bold">Dr. Anika Sharma, MD, PhD</h5>
+                    <p class="mb-1">Neurologist</p>
+                    <p class="mb-1">Experience: MD, PhD in Neuroscience</p>
+                    <p class="mb-1">Next Available Time:</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!--Second Row-->
+        <!-- Second Row -->
         <div class="row justify-content-evenly">
-          <div class="col-md-5">
-            <div class="card mb-3 shadow p-3 mb-5 bg-body-tertiary rounded">
-              <!--Shadow and Maxwidth given-->
-              <div class="row g-3">
+          <div class="col-md-5 mb-3">
+            <div class="card h-100 mb-3 shadow rounded">
+              <div class="row g-0">
                 <div class="col-md-4">
-                  <img
-                    src="/Images/Doctors/Dr. Nisha Thapa, BDS, MS.png"
-                    class="img-fluid rounded-circle py-5"
-                    alt="Doctor Rabin"
-                  />
+                  <img src="/Images/Doctors/Dr. Nisha Thapa, BDS, MS.png" class="img-fluid rounded-circle p-3" alt="Doctor Nisha">
                 </div>
                 <div class="col-md-8">
-                  <div class="card-body">
-                    <h6 class="card-title">Dr. Nisha Thapa, BDS, MS</h6>
-                    <!--Should be changed-->
-                    <p class="card-text fs-6 fw-normal">
-                      Dentist (Orthodontist)
-                    </p>
-                    <!--Should be changed-->
-                    <p class="card-text fs-6 fw-normal">
-                      Experience: Dr. Thapa is a dentist specializing in
-                      orthodontics. She earned her Bachelor of Dental Surgery
-                      (BDS) degree and later pursued a Master's in Orthodontics
-                      (MS).
-                    </p>
-                    <!--Should be changed-->
-                    <p class="card-text fs-6 fw-semibold">
-                      Next Available Time:
-                    </p>
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title fw-bold">Dr. Nisha Thapa, BDS, MS</h5>
+                    <p class="mb-1">Dentist (Orthodontist)</p>
+                    <p class="mb-1">Experience: BDS, MS in Orthodontics</p>
+                    <p class="mb-1">Next Available Time:</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="card mb-3 card mb-3 shadow p-3 mb-5 bg-body-tertiary rounded"
-            style="max-width: 500px"
-          >
-            <!--Shadow and Maxwidth given-->
-            <div class="row g-3">
-              <div class="col-md-4">
-                <img
-                  src="/Images/Doctors/Dr. Suraj Adhikari, MD, MSc.png"
-                  class="img-fluid rounded-circle py-5"
-                  alt="Doctor Anika"
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h6 class="card-title">Dr. Suraj Adhikari, MD, MSc</h6>
-                  <!--Should be changed-->
-                  <p class="card-text fs-6 fw-normal">Orthopedic Surgeon</p>
-                  <!--Should be changed-->
-                  <p class="card-text fs-6 fw-normal">
-                    Experience: With 11 years of experience, he has expertise in
-                    joint replacements and sports-related orthopedic injuries.
-                  </p>
-                  <!--Should be changed-->
-                  <p class="card-text fs-6 fw-semibold">Next Available Time:</p>
+          <div class="col-md-5 mb-3">
+            <div class="card h-100 mb-3 shadow rounded">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="/Images/Doctors/Dr. Suraj Adhikari, MD, MSc.png" class="img-fluid rounded-circle p-3" alt="Doctor Suraj">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title fw-bold">Dr. Suraj Adhikari, MD, MSc</h5>
+                    <p class="mb-1">Orthopedic Surgeon</p>
+                    <p class="mb-1">Experience: 11 years</p>
+                    <p class="mb-1">Next Available Time:</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!--Third Row-->
+        <!-- Third Row -->
         <div class="row justify-content-evenly">
-          <div class="col-md-5">
-            <div class="card mb-3 shadow p-3 mb-5 bg-body-tertiary rounded">
-              <!--Shadow and Maxwidth given-->
-              <div class="row g-3">
+          <div class="col-md-5 mb-3">
+            <div class="card h-100 mb-3 shadow rounded">
+              <div class="row g-0">
                 <div class="col-md-4">
-                  <img
-                    src="/Images/Doctors/Dr. Rajan Thapa, MD, MBA.png"
-                    class="img-fluid rounded-circle py-5"
-                    alt="Doctor Rabin"
-                  />
+                  <img src="/Images/Doctors/Dr. Rajan Thapa, MD, MBA.png" class="img-fluid rounded-circle p-3" alt="Doctor Rajan">
                 </div>
                 <div class="col-md-8">
-                  <div class="card-body">
-                    <h6 class="card-title">Dr. Rajan Thapa, MD, MBA</h6>
-                    <!--Should be changed-->
-                    <p class="card-text fs-6 fw-normal">Gastroenterologist</p>
-                    <!--Should be changed-->
-                    <p class="card-text fs-6 fw-normal">
-                      Experience: With over 22 years of experience, he has
-                      managed gastroenterology departments and actively
-                      participated in medical outreach programs.
-                    </p>
-                    <!--Should be changed-->
-                    <p class="card-text fs-6 fw-semibold">
-                      Next Available Time:
-                    </p>
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title fw-bold">Dr. Rajan Thapa, MD, MBA</h5>
+                    <p class="mb-1">Gastroenterologist</p>
+                    <p class="mb-1">Experience: Over 22 years</p>
+                    <p class="mb-1">Next Available Time:</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="card mb-3 card mb-3 shadow p-3 mb-5 bg-body-tertiary rounded"
-            style="max-width: 500px"
-          >
-            <!--Shadow and Maxwidth given-->
-            <div class="row g-3">
-              <div class="col-md-4">
-                <img
-                  src="/Images/Doctors/Dr. Maya Bhandari, MD, PsyD.png"
-                  class="img-fluid rounded-circle py-5"
-                  alt="Doctor Anika"
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h6 class="card-title">Dr.Maya Bhandari,MD</h6>
-                  <!--Should be changed-->
-                  <p class="card-text fs-6 fw-normal">Psychiatrist</p>
-                  <!--Should be changed-->
-                  <p class="card-text fs-6 fw-normal">
-                    Experience:With 10 years of experience, she has expertise in
-                    both medical and psychological aspects of mental health.
-                  </p>
-                  <!--Should be changed-->
-                  <p class="card-text fs-6 fw-semibold">Next Available Time:</p>
+          <div class="col-md-5 mb-3">
+            <div class="card h-100 mb-3 shadow rounded">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="/Images/Doctors/Dr. Maya Bhandari, MD, PsyD.png" class="img-fluid rounded-circle p-3" alt="Doctor Maya">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title fw-bold">Dr. Maya Bhandari, MD</h5>
+                    <p class="mb-1">Psychiatrist</p>
+                    <p class="mb-1">Experience: 10 years</p>
+                    <p class="mb-1">Next Available Time:</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!--Fourth Row-->
+        <!-- Fourth Row -->
         <div class="row justify-content-evenly">
-          <div class="col-md-5">
-            <div class="card mb-3 shadow p-3 mb-5 bg-body-tertiary rounded">
-              <!--Shadow and Maxwidth given-->
-              <div class="row g-3">
+          <div class="col-md-5 mb-3">
+            <div class="card h-100 mb-3 shadow rounded">
+              <div class="row g-0">
                 <div class="col-md-4">
-                  <img
-                    src="/Images/Doctors/Dr. Samir Pant, MD, PhD.png"
-                    class="img-fluid rounded-circle py-5"
-                    alt="Doctor Rabin"
-                  />
+                  <img src="/Images/Doctors/Dr. Samir Pant, MD, PhD.png" class="img-fluid rounded-circle p-3" alt="Doctor Samir">
                 </div>
                 <div class="col-md-8">
-                  <div class="card-body">
-                    <h6 class="card-title">Dr. Samir Pant, MD, PhD</h6>
-                    <!--Should be changed-->
-                    <p class="card-text fs-6 fw-normal">Cardiologist</p>
-                    <!--Should be changed-->
-                    <p class="card-text fs-6 fw-normal">
-                      Experience:With 14 years of experience, he has been
-                      actively involved in cardiovascular research and has
-                      contributed to the development of innovative treatment
-                      approaches.
-                    </p>
-                    <!--Should be changed-->
-                    <p class="card-text fs-6 fw-semibold">
-                      Next Available Time:
-                    </p>
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title fw-bold">Dr. Samir Panta, MD, PhD</h5>
+                    <p class="mb-1">Cardiologist</p>
+                    <p class="mb-1">Experience: 14 years</p>
+                    <p class="mb-1">Next Available Time:</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="card mb-3 card mb-3 shadow p-3 mb-5 bg-body-tertiary rounded"
-            style="max-width: 500px"
-          >
-            <!--Shadow and Maxwidth given-->
-            <div class="row g-3">
-              <div class="col-md-4">
-                <img
-                  src="/Images/Doctors/Dr. Sunita Joshi, DO, FACOG.png"
-                  class="img-fluid rounded-circle py-5"
-                  alt="Doctor Anika"
-                />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h6 class="card-title">Dr. Sunita Joshi, DO, FACOG</h6>
-                  <!--Should be changed-->
-                  <p class="card-text fs-6 fw-normal">
-                    Obstetrician-Gynecologist
-                  </p>
-                  <!--Should be changed-->
-                  <p class="card-text fs-6 fw-normal">
-                    Experience:With 16 years of experience, Dr. Joshi has
-                    delivered personalized care to women at all stages of life.
-                  </p>
-                  <!--Should be changed-->
-                  <p class="card-text fs-6 fw-semibold">Next Available Time:</p>
+          <div class="col-md-5">
+            <div class="card h-100 mb-3 shadow rounded">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="/Images/Doctors/Dr. Sunita Joshi, DO, FACOG.png" class="img-fluid rounded-circle p-3" alt="Doctor Sunita">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <h5 class="card-title fw-bold">Dr. Sunita Joshi, DO, FACOG</h5>
+                    <p class="mb-1">Obstetrician-Gynecologist</p>
+                    <p class="mb-1">Experience: 16 years</p>
+                    <p class="mb-1">Next Available Time:</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+            
     </main>
 
     <!--Apply design for user and doctor-->
 
     <div class="upperFooter container-fluid mt-5 mb-5">
-      <div class="d-flex justify-content-evenly">
-        <div class="d-flex flex-column mt-5">
-          <div class="text-center text-white fs-3">
-            Become our Health partner
-          </div>
-          <div class="w-50 mt-3">
-            <button class="btn btn-danger fw-semibold fs-5">Apply Now</button>
-          </div>
+      <div class="row justify-content-evenly">
+        <div class="col-md-5 col-lg-4 d-flex flex-column justify-content-center align-items-center mt-5">
+          <h2 class="text-center text-white fw-bold mb-4">Become Our Health Partner</h2>
+          <button class="btn btn-danger btn-lg fw-semibold">Apply Now</button>
         </div>
-        <div class="d-flex flex-column mt-5">
-          <div class="text-center text-white fs-3">Become our doctor</div>
-          <div class="w-75 mt-3">
-            <button class="btn btn-danger fw-semibold fs-5">Apply Now</button>
-          </div>
+        <div class="col-md-5 col-lg-4 d-flex flex-column justify-content-center align-items-center mt-5">
+          <h2 class="text-center text-white fw-bold mb-4">Become Our Doctor</h2>
+          <button class="btn btn-danger btn-lg fw-semibold">Apply Now</button>
         </div>
       </div>
     </div>
+    
 
     <!--Footer Design-->
     <footer>
@@ -462,7 +350,7 @@
                   />
                 </a>
               </div>
-            </div>
+            </div> 
           </div>
         </div>
       </div>
@@ -549,5 +437,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <script src="/Js/appointment.js"></script>
   </body>
 </html>

@@ -49,9 +49,12 @@ span {
   background-color: #333;
 }
 .Hospital {
-  background: rgb(228, 241, 245);
+  background-image: url("/Images/Hospital/blur-hospital.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: rgb(228, 241, 245); */
   height: 80%;
-  box-shadow: 3px 5px 15px #333;     /* Can be given in main class of Medicine Class. Foor jastai daykhay ra yata css dayko*/
+  box-shadow: 3px 5px 15px #333;   
 }
 .Visit-Hospital{
   font-family: "Cormorant Garamond", serif;
@@ -65,4 +68,13 @@ span {
 }
 .card-title{
   font-family: "Poppins", sans-serif;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

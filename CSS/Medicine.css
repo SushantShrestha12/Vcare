@@ -1,29 +1,26 @@
-body {
-    background: linear-gradient(
-      180deg,
-      rgba(201, 241, 255, 0.5) 0%,
-      rgba(166, 227, 246, 0.5) 100%
-    );
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
 header {
   height: 100vh;
 }
 .nav-link::after {
-  content: '';
+  content: "";
   width: 0%;
   height: 2px;
-  background: #0000CD;
+  background: #0000cd;
   display: block;
   margin: auto;
   transition: 0.5s;
 }
 
-.nav-link:hover:after{
+.nav-link:hover:after {
   width: 100%;
 }
 
 .container h2 {
-  margin-left: -18px; /* Reduce gap betweeen logo and Vcare */ 
+  margin-left: -18px; /* Reduce gap betweeen logo and Vcare */
 }
 
 h2 {
@@ -42,8 +39,17 @@ span {
 .Medicine {
   background: rgba(255, 255, 255, 0.7);
   height: 80%;
-  box-shadow: 3px 5px 15px #333;     /* Can be given in main class of Medicine Class. Foor jastai daykhay ra yata css dayko*/
+  box-shadow: 3px 5px 15px #333; /* Can be given in main class of Medicine Class. Foor jastai daykhay ra yata css dayko*/
   background-image: url(/Images/Medicine/medicineimg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

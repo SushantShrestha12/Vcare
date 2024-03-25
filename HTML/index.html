@@ -35,7 +35,7 @@
   <body>
     <!-- header Design -->
     <header>
-      <nav class="navbar navbar-expand-lg  bg-body-none">
+      <nav class="navbar navbar-expand-lg bg-body-none">
         <div class="container">
           <a class="navbar-brand mx-auto" href="/HTML/index.html">
             <img
@@ -106,7 +106,7 @@
               Sushant
             </p>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Logout</a></li>
+              <li><a class="dropdown-item" id="logout" href="#">Logout</a></li>
             </ul>
           </div>
         </div>
@@ -126,7 +126,7 @@
                 <a href="/HTML/appointment.html">
                   <button
                     type="submit"
-                    class="bttn btn-primar p-3 w-50 mt-3 ms-5 rounded-5 shadow"
+                    class="bttn btn-dark p-1 w-75 mt-3 ms-5 rounded-5 shadow"
                   >
                     <!--Change of class btn to bttn-->
                     Book an Appointment
@@ -158,18 +158,23 @@
         </div>
 
         <div class="container py-5">
-          <div class="row">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col-md-3">
-              <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+              <div class="card shadow-sm bg-light rounded-3 border-0 hover-effect">
                 <img
                   src="/Images/Appoinment doctor.jpg"
                   class="card-img-top"
                   alt="Smiley doctor"
                 />
                 <div class="card-body">
-                  <h4 class="p card-title">Book an appointment with doctor.</h4>
-                  <a href="/HTML/appointment.html">
-                    <button type="button" class="btn btn-dark">
+                  <h4 class="card-title fs-5">
+                    Book an appointment with a doctor.
+                  </h4>
+                  <a
+                    href="/HTML/appointment.html"
+                    class="stretched-link text-decoration-none"
+                  >
+                    <button type="button" class="btn btn-dark rounded-pill">
                       Consult Now
                     </button>
                   </a>
@@ -177,16 +182,19 @@
               </div>
             </div>
             <div class="col-12 col-lg-3">
-              <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+              <div class="card shadow-sm bg-light rounded-3 border-0 hover-effect">
                 <img
                   src="/Images/Delivery.jpg"
                   class="card-img-top"
-                  alt="Smiley doctor"
+                  alt="Delivery"
                 />
                 <div class="card-body">
-                  <h4 class="p card-title">Order Medicines Online.</h4>
-                  <a href="/HTML/Medicine.html">
-                    <button type="button" class="btn btn-dark">
+                  <h4 class="card-title fs-5">Order your medicines online.</h4>
+                  <a
+                    href="/HTML/Medicine.html"
+                    class="stretched-link text-decoration-none"
+                  >
+                    <button type="button" class="btn btn-dark rounded-pill">
                       Order Now!
                     </button>
                   </a>
@@ -194,16 +202,19 @@
               </div>
             </div>
             <div class="col-12 col-lg-3">
-              <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+              <div class="card shadow-sm bg-light rounded-3 border-0 hover-effect">
                 <img
                   src="/Images/physicalAppoinment.jpg"
                   class="card-img-top"
-                  alt="Smiley doctor"
+                  alt="Physical Appointment"
                 />
                 <div class="card-body">
-                  <h4 class="p card-title">Book a physical appointment.</h4>
-                  <a href="/HTML/Hospital.html">
-                    <button type="button" class="btn btn-dark">
+                  <h4 class="card-title fs-5">Book a physical appointment.</h4>
+                  <a
+                    href="/HTML/Hospital.html"
+                    class="stretched-link text-decoration-none"
+                  >
+                    <button type="button" class="btn btn-dark rounded-pill">
                       Book Now!
                     </button>
                   </a>
@@ -211,16 +222,21 @@
               </div>
             </div>
             <div class="col-12 col-lg-3">
-              <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
+              <div class="card shadow-sm bg-light rounded-3 border-0 hover-effect">
                 <img
                   src="/Images/track.jpg"
                   class="card-img-top"
-                  alt="Smiley doctor"
+                  alt="Medical History"
                 />
                 <div class="card-body">
-                  <h4 class="p card-title">Trace your medical history</h4>
-                  <a href="/HTML/History.html">
-                    <button type="button" class="btn btn-dark">View</button>
+                  <h4 class="card-title fs-5">Trace your medical history</h4>
+                  <a
+                    href="/HTML/History.html"
+                    class="stretched-link text-decoration-none"
+                  >
+                    <button type="button" class="btn btn-dark rounded-pill">
+                      View medical history
+                    </button>
                   </a>
                 </div>
               </div>
@@ -254,7 +270,7 @@
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-center">
               <a href="/HTML/bmi.html">
-                <button type="button" class="btn btn-dark me-2 mt-5">
+                <button type="button" class="btn btn-dark me-2 mt-5 rounded-5 bmi-btn">
                   Calculate BMI
                 </button>
               </a>
@@ -308,22 +324,16 @@
         </div>
       </div>
 
-      <footer class="bg-dark text-white pt-5 pb-4">
+      <footer class="bg-dark text-white py-5">
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-4">
-              <img
-                src="/Images/Logo.png"
-                alt="Logo"
-                width="100"
-                height="100"
-                class="align-middle mb-2"
-              />
-              <span class="fs-5 fw-bold">Vcare</span>
+              <img src="/Images/Logo.png" alt="Logo" width="100" height="100" />
+              <span class="fs-4 ms-3 fw-bold d-block">Vcare</span>
             </div>
             <div class="col-12 col-md-4 text-center">
-              <h5 class="mb-3">Our Services</h5>
-              <ul class="list-unstyled py-1">
+              <h5 class="mb-4">Our Services</h5>
+              <ul class="list-unstyled">
                 <li>
                   <a
                     href="/HTML/Medicine.html"
@@ -355,16 +365,20 @@
               </ul>
             </div>
             <div class="col-12 col-md-4 text-end">
-              <h4 class="mb-3">Contact Us</h4>
-              <p class="fs-6">
+              <h4 class="mb-4">Contact Us</h4>
+              <p class="fs-6 mb-3">
                 <img
                   src="/Images/mail.png"
                   alt="Email Icon"
-                  width="16"
-                  height="16"
+                  width="20"
+                  height="20"
                   class="me-2"
                 />
-                Email: info@vare.com
+                <a
+                  href="mailto:info@vare.com"
+                  class="text-decoration-none text-white"
+                  >info@vare.com</a
+                >
               </p>
               <p class="fs-6">
                 <img
@@ -372,14 +386,19 @@
                   alt="Phone Icon"
                   width="20"
                   height="20"
-                  class=""
+                  class="me-2"
                 />
-                Phone: +01 97667676
+                <a
+                  href="tel:+0197667676"
+                  class="text-decoration-none text-white"
+                  >+01 97667676</a
+                >
               </p>
             </div>
           </div>
         </div>
       </footer>
+
       <div class="copyright bg-black text-white text-center py-2">
         &copy; 2024 Vcare
       </div>
