@@ -11,7 +11,7 @@ document
     };
 
     try {
-      const baseUrl = "https://localhost:7110/Login";
+      const baseUrl = "https://localhost:7110/Login/login";
       const response = await fetch(baseUrl, {
         method: "POST",
         headers: {

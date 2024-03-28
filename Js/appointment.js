@@ -1,69 +1,127 @@
-// Function to handle card click event
+let timeButtons = document.getElementById("timeButtons");
+
 function onCardClick(card) {
-    displayTimeSelectionInterface(card);
+  displayTimeSelectionInterface(card);
 }
 
 function displayTimeSelectionInterface(card) {
-    // Simulated available times
-    let availableTimes = ["10:00 AM", "11:00 AM", "12:00 PM", "1:00 PM", "2:00 PM"];
+  let availableTimes = [
+    "10:00:00",
+    "11:00:00",
+    "12:00:00",
+    "1:00:00",
+    "2:00:00",
+  ];
+  let modal = document.getElementById("myModal");
+  let span = document.getElementsByClassName("close")[0];
+  timeButtons.innerHTML = "";
 
-    // Get the modal
-    let modal = document.getElementById("myModal");
+  availableTimes.forEach((time) => {
+    let timeButton = document.createElement("button");
+    timeButton.setAttribute("id", "timeBtn");
+    timeButton.innerText = time;
+    timeButton.onclick = async function () {
+      modal.style.display = "none";
+      if (localStorage.getItem("Name")) {
+        var username = localStorage.getItem("Name");
+        var doctorName = document.querySelector(".card-title");
+        var time = document.getElementById("timeBtn");
 
-    // Get the <span> element that closes the modal
-    let span = document.getElementsByClassName("close")[0];
-
-    // Get the time buttons container
-    let timeButtons = document.getElementById("timeButtons");
-
-    // Clear previous time buttons
-    timeButtons.innerHTML = "";
-
-    // Add available times as buttons
-    availableTimes.forEach(time => {
-        let timeButton = document.createElement("button");
-        timeButton.innerText = time;
-        timeButton.onclick = function() {
-            // When the user clicks a time button, close the modal and confirm the booking
-            modal.style.display = "none";
-            onConfirmTimeSelection(time, card);
+        const doctorAppointment = {
+          username: username,
+          doctorName: doctorName,
+          time: time,
         };
-        timeButtons.appendChild(timeButton);
-    });
 
-    // Display the modal
-    modal.style.display = "block";
+        try {
+          const baseUrl = "https://localhost:7110/DoctorAppointment";
+          const response = await fetch(baseUrl, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(doctorAppointment),
+          });
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    };
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+          if (response.ok) {
+            alert("Successfully created. Please login to continue.");
+          }
+        } catch (error) {
+          console.log(error);
         }
+      } else {
+        window.alert("Please login first!");
+        return;
+      }
+      onConfirmTimeSelection(time, card);
     };
+    timeButtons.appendChild(timeButton);
+  });
+
+  modal.style.display = "block";
+
+  span.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
 }
 
-
-// Add event listener to the card element
 let cards = document.querySelectorAll(".card");
 
-cards.forEach(card => {
-    card.addEventListener("click", function(){
-        onCardClick(this);
-    });
+cards.forEach((card) => {
+  card.addEventListener("click", function () {
+    onCardClick(this);
+  });
 });
 
-// Function to handle confirmation of time selection
 function onConfirmTimeSelection(selectedTime) {
-        displayConfirmationMessage(selectedTime);
-        document.body.removeChild(document.querySelector("div"));
+  displayConfirmationMessage(selectedTime);
+  document.body.removeChild(document.querySelector("div"));
 }
 
-// Function to display confirmation message
 function displayConfirmationMessage(selectedTime) {
-    alert("Booking confirmed for " + selectedTime);
+  alert("Booking confirmed for " + selectedTime);
 }
+
+// ---------------------------Doctor Appointment------------------------
+
+// timeButtons.addEventListener("click", async function (event) {
+//   event.preventDefault();
+
+//   if (localStorage.getItem("Name")) {
+//     var username = localStorage.getItem("Name");
+//     var doctorName = document.querySelector(".card-title");
+//     var time = document.getElementById("timeBtn");
+
+//     const doctorAppointment = {
+//       username: username,
+//       doctorName: doctorName,
+//       time: time,
+//     };
+
+//     try {
+//       const baseUrl = "https://localhost:7110/DoctorAppointment";
+//       const response = await fetch(baseUrl, {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify(doctorAppointment),
+//       });
+
+//       if (response.ok) {
+//         alert("Successfully created. Please login to continue.");
+//       }
+//     } catch (error) {
+//       console.log(error);
+//     }
+//   } else {
+//     console.alert("Please login first!");
+//     return;
+//   }
+// });
