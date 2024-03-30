@@ -79,9 +79,9 @@ cards.forEach((card) => {
   });
 });
 
-function onConfirmTimeSelection(selectedTime) {
+function onConfirmTimeSelection(selectedTimeButton) {
+  const selectedTime = selectedTimeButton.innerText; // Extract text content
   displayConfirmationMessage(selectedTime);
-  document.body.removeChild(document.querySelector("div"));
 }
 
 function displayConfirmationMessage(selectedTime) {
