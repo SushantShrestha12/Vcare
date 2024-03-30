@@ -1,0 +1,55 @@
+header {
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+.navbar{
+    font-family: "Taviraj", serif;
+    font-style: normal;
+}
+
+.nav-link::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #0000cd;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+  
+.nav-link:hover:after {
+    width: 100%;
+}
+  
+.container h2 {
+    margin-left: -18px; /* Adjust this value to reduce the gap */
+}
+.About{
+    background:  #e5e3f745;
+    height: 30%;
+}
+.About-Us{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-size: 60px;
+    font-style: normal;
+}
+.Our-Vision{
+    margin-top: 70px;
+   margin-left: 150px;
+   line-height: 30px;
+}
+.Our-Vision h1{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    text-decoration: underline #b396bd29;
+} 
+.card{
+    border: none;
+}
+.Our-Story{
+    margin-top: 60px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
