@@ -22,7 +22,7 @@ function displayTimeSelectionInterface(card) {
     timeButton.innerText = time;
     timeButton.onclick = async function () {
       modal.style.display = "none";
-      if (localStorage.getItem("Name")) {
+      if (true) {
         var username = localStorage.getItem("Name");
         var doctorName = document.querySelector(".card-title");
         var time = document.getElementById("timeBtn");
